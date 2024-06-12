@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador. </p>
+    <picture><!--sempre que for colocar a tag <source> coloca ela acima das outras-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="imagens/foto-m.png" type="image/png">
+        <!--sempre a cima da foto principal-->
+        <img src="imagens/foto-G.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo áudio </h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/dubstep.mp3.mp3" controls autoplay></audio> <!--colocar a pasta e selecionar o arquivo--> <!--Formatos compátiveis - MP3 - WAV - OGG -->
+    <!--Segunda alternativa para colocar áudio-->
+    <audio preload="metadata" controls autoplay loop><!--wav são arquivos super pesados, evitar usá-los, preload é para falar o que vai ser baixado.-->
+        <source src="midia/dubstep.mp3.mp3" type="audio/mpeg">
+        <source src="midia/dubstep.mp3.mp3" type="audio/ogg">
+        <source src="midia/dubstep.mp3.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegu reproduzir o áudio. <a href="midia/dubstep.mp3.mp3">Clique aqui para baixar o áudio em MP3.</a></p>
+    </audio>
+
+</body>
+</html>

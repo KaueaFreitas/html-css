@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outrtas formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>documet.getElemetById('teste')</code> é escrito em linguagem JavaScript</p>
+    <!--a fonte não é mono-espaçada, usar tag code para deixar organizada-->
+    <pre>
+        <code>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'o número {num} é PAR')
+else:
+    print(f'o número {num} é ÍMPAR')
+print('Fim do programa')
+        </code>
+    </pre>
+            <!--a tag code, nao organiza seu código, nao deixa ela indentada* - a tag pre deixa ela toda indentada-->
+            <!--shift + Tab volta o cód para trás, e somento o Tab para frente -->
+    <h2>Citações</h2>
+    <p>Como diria meu Professor de Informática: <q>o computador é um burro muito rápido</q></p>
+    <!--A tag <q> (quote-citar) você está fazendo uma citações simples-->
+    <h2>Citações completas</h2>
+    <p>Segundo Phil Jackson, no seu livro Onze anéis a alma do sucesso:</p>
+    <blockquote cite="https://lui-blog.com/livros/onze-aneis-a-alma-do-sucesso-phil-jackson/#:~:text=Jamais%20poderei%20ser%20o%20que,for%20o%20que%20posso%20ser.">
+
+        Jamais poderei ser o que posso ser até que você também seja o que pode ser, e você só poderá ser o que pode ser quando eu também for o que posso ser.
+    </blockquote>
+    <!--A citação em bloco é reservada para citar autores e +,ela possui uma quebra de linha e um deslocamento para direita, podendo colocar um cite do link de onde a citação veio-->
+
+<h2>Abreviações</h2>
+<p>Estou estudando <abbr title="HiperText Markup Language ">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. 
+    Estou adorando!
+</p> <!--a tag <abbr> mostra a o que foi abreviado-->
+
+<h2>Texto invertido</h2>
+<p><bdo dir="rtl"> Estou aprendendo criar coisas em HTML e CSS.</bdo></p> <!--tag <bdo> é utilizada para inverter o texto-->
+
+</body>
+</html>

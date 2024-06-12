@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2> <!--order lists/listas ordenadas são aquelas listas onde a ordem importa/Para criar uma ordered list, vamos usar a tag <ol> para delimitar a lista e <li> (list
+        item) para identificar cada item da lista.-->
+    <ol type="I"> <!--o type é para escolher o que vai numerar a lista 1,A,a,I,i-->      
+        <!--o </li> se tornopu opcional no HTML5-->
+        <li>Acordar
+        <li>Tomar café</li>
+        <li>Rezar</li>
+        <li>Arrumar a cama</li>
+        <li>Escovar o dente</li>
+        <li>Estudar</li>
+        <li>Ir para academia</li>
+    </ol>
+
+    <h2>Listas não Ordenadas</h2> <!--Unordered lists/ Listas onde a ordens dos itens não influenciará no significado dos mesmos/ Para criar uma unordered list, vamos usar a tag <ul> para delimitar a lista e a tag <li> para criar cada um dos seus itens internos.-->
+
+    <ul type="square"><!--O type vai personalizar o marcador, disc(Padrão), circle, square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+    </ul>
+    <h2>Minhas Linguagens favoritas</h2>
+    <ol type="1">
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="4"> <!-- start é um paramêtro alfa numérico, por isso colocar em número-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+        </ol>
+    </ol>
+
+    <h2>Meus video-games favoritos</h2> <!-- listas com outas listas dentro -->
+    <ol type="I">
+        <li>Consoles Favoritos</li>
+        <ul type="circle">
+            <li>PlayStation 2</li>
+            <li>Xbox-360</li>
+            <li>PlayStation 5</li>
+        </ul>
+        <li>Jogos Favoritos</li>
+        <ul>
+            <li>Fifa</li>
+            <ul type="square">
+                <li>Fifa-Street</li>
+                <li>Fifa 23</li>
+            </ul>
+            <li>The Last of Us</li>
+            <li>God of War</li>
+            <li>NBA2k</li>
+        </ul>
+    </ol>
+    <h2> Lista de Definições</h2> <!-- É uma definition list(dl), tipo um dicionário-->
+    <dl>
+        <dt>HTML</dt> <!-- Coloca o termo que iremos definir (definition term <dt>)-->
+        <dd>Linguagem de marcação utilizada para criar o contúdo de um site.</dd> <!-- Coloca a descrição do nosso termo (definition description <dd>)-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>

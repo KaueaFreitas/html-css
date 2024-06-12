@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1><!--Para criar um hyperlink, devemos criar âncoras através da tag <a>. O principal atributo dessa tag é o href, que cria uma referência hipertexto.-->
+    <p>Você pode acessar o meu <a href="https://www.youtube.com/watch?v=BaSku5ROvdQ" target="_blank" rel="external">vídeo favorito no Youtube</a></p>
+    <!-- target (alvo) para definir se vai abrir em outra guia ou na mesma guia que você está colocando o link/ rel vai definir de onde é seu link inserido -->
+    <p>Você também pode acessar <a href="https://www.instagram.com/k_afreitass/" target="_self" rel="external">meu Instagram</a></p>
+    <h2>Usando um link interno</h2>
+    <p>Está é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p> 
+    <!-- ctrl+ espaço + página -->
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next">página de notícias</a></p><!--tem que indicar quando está dentro de um arquivo-->
+
+    <h1>Links para download</h1> <!--forma de fazer download do arquivo-->
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="livro/10 - Ligações em toda parte.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
