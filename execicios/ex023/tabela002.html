@@ -12,6 +12,8 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+
         }
         td, th{
             border: 1px solid black;
@@ -31,6 +33,16 @@
             color: white;
         }
         
+        thead > tr > th{ /* config de cabeçalho fixo  */
+            position: sticky;
+            top: -1px;
+            background-color:rgb(73, 73, 73);;
+        }
+
+        tbody > tr:nth-child(2n) { /* pseudo-classe para deixar zebrado- odd-ímpar ou 2n-1 / even-par ou 2n */
+            background-color: lightgray;
+        }
+
         td.num{
             text-align: right;
         }
@@ -181,8 +193,6 @@
                 <td class="num">605.761</td>
             </tr>
         </tbody>
-
-        
     </table>
 </body>
 </html>
